@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+	<title>Verificacion de campos y envio</title>
+</head>
+
+<body onload="loadDoc()">
+
+	<center>
+		<h3>Actividad obligatoria Java unidad 3</h3>
+	</center>
+
+	<center>
+
+		<form name="test" action="mostrarVariablesSubmit.html" method="GET">
+			<table>
+				<tbody>
+					<tr>
+						<td>Ingresar E-mail:</td>
+						<td><input type="text" name="email"></td>
+					</tr>
+					<tr>
+						<td>Ingresar password:</td>
+						<td>
+							<input type="password" name="clave"
+								onkeyup="muestra_seguridad_clave(this.value, this.form)">
+						</td>
+
+					<tr>
+						<td align="center">
+							<input type="button" name="Tfin" value="Ingresar"
+								onclick="runSubmit(this.form, this)"></td>
+					</tr>
+
+
+
+				</tbody>
+			</table>
+
+		</form>
+	</center>
+    <!-- referencia al archivo javascript-->
+    <script src="control.js" ></script>
+
+	
+</body>
+
+</html>
